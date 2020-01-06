@@ -23,3 +23,27 @@ def spiral():
     for side in range(20):
         t.forward(side * 10)
         t.right(120)
+
+t = turtle.Turtle()
+t.speed(0)
+t.width(4)
+
+def tri():
+    for s in range(3):
+        t.forward(100)
+        t.right(120)
+
+def cycle():
+    for color in ['red', 'orange', 'blue']:
+        t.color(color)
+        for i in range(6):
+            tri()
+            t.right(360/18)
+    t.hideturtle()
+# Call the function multiple times.
+
+# cycle()
+# t.penup()
+# t.pendown()
+# t.home()
+# t.back()
